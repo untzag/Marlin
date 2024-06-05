@@ -812,8 +812,8 @@
 
 #define HAS_DUAL_Y_STEPPERS true
 #if HAS_DUAL_Y_STEPPERS
-  #define INVERT_Y2_VS_Y_DIR true       // Y2 direction signal is the opposite of Y
-  //#define Y_DUAL_ENDSTOPS           // Y2 has its own endstop
+  #define INVERT_Y2_VS_Y_DIR       // Y2 direction signal is the opposite of Y
+  #define Y_DUAL_ENDSTOPS          // Y2 has its own endstop
   #if ENABLED(Y_DUAL_ENDSTOPS)
     #define Y2_USE_ENDSTOP    _YMAX_  // Y2 endstop board plug. Don't forget to enable USE_*_PLUG.
     #define Y2_ENDSTOP_ADJUSTMENT  0  // Y2 offset relative to Y endstop
@@ -1589,7 +1589,7 @@
    * This feature is enabled with 'M540 S1' or from the LCD menu.
    * Endstops must be activated for this option to work.
    */
-  //#define SD_ABORT_ON_ENDSTOP_HIT
+  #define SD_ABORT_ON_ENDSTOP_HIT
   #if ENABLED(SD_ABORT_ON_ENDSTOP_HIT)
     //#define SD_ABORT_ON_ENDSTOP_HIT_GCODE "G28XY" // G-code to run on endstop hit (e.g., "G28XY" or "G27")
   #endif
