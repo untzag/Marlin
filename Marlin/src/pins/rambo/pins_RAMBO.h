@@ -156,7 +156,7 @@
 #define PS_ON_PIN                              4
 
 #ifndef CASE_LIGHT_PIN
-  #define CASE_LIGHT_PIN                      46
+  #define CASE_LIGHT_PIN                      45
 #endif
 
 #ifndef FILWIDTH_PIN
@@ -166,8 +166,8 @@
 //
 // M3/M4/M5 - Spindle/Laser Control
 //
-#define SPINDLE_LASER_PWM_PIN                 45  // Hardware PWM
-#define SPINDLE_LASER_ENA_PIN                 31  // Pullup!
+#define SPINDLE_LASER_PWM_PIN                 46  // Hardware PWM
+#define SPINDLE_LASER_ENA_PIN                 44  // Pullup!
 #define SPINDLE_DIR_PIN                       32
 
 //
@@ -181,7 +181,7 @@
 // M7/M8/M9 - Coolant Control
 //
 #define COOLANT_MIST_PIN                      22
-#define COOLANT_FLOOD_PIN                     44
+#define COOLANT_FLOOD_PIN                     31
 
 //
 // Průša i3 MK2 Multiplexer Support
